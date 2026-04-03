@@ -107,9 +107,7 @@
     <h2 class="sec-title" data-i18n="contact.title">Ota yhteytta</h2>
     <div class="contact-grid">
       <div>
-        <p style="color:var(--brown);font-size:13px;font-weight:300;margin-bottom:20px;" data-i18n="contact.lead">
-          Harjoittelupaikat, projektit tai vain hei - kirjoita minulle!
-        </p>
+        <p style="color:var(--brown);font-size:13px;font-weight:300;margin-bottom:20px;" data-i18n="contact.lead">Harjoittelupaikat, projektit tai vain hei - kirjoita minulle!</p>
         <div class="ci-row"><span class="ci-label" data-i18n="contact.emailLabel">Sahkoposti</span><span class="ci-val">esra@bagdat.dev</span></div>
         <div class="ci-row"><span class="ci-label">GitHub</span><span class="ci-val">github.com/esrabagdat</span></div>
         <div class="ci-row"><span class="ci-label">LinkedIn</span><span class="ci-val">linkedin.com/in/esrabagdat</span></div>
@@ -119,22 +117,23 @@
       <form action="https://formspree.io/f/mzdkjjjk" method="POST">
         <div class="form-group">
           <label data-i18n="contact.form.nameLabel">Nimesi</label>
-          <input type="text" name="name" required placeholder="Ada Lovelace" data-i18n-placeholder="contact.form.namePlaceholder">
+          <input type="text" name="name" placeholder="Ada Lovelace" data-i18n-placeholder="contact.form.namePlaceholder" required>
         </div>
         
         <div class="form-group">
           <label data-i18n="contact.form.emailLabel">Sahkoposti</label>
-          <input type="email" name="email" required placeholder="ada@example.com" data-i18n-placeholder="contact.form.emailPlaceholder">
+          <input type="email" name="email" placeholder="ada@example.com" data-i18n-placeholder="contact.form.emailPlaceholder" required>
         </div>
 
         <div class="form-group">
           <label data-i18n="contact.form.messageLabel">Viesti</label>
-          <textarea name="message" required placeholder="Hei Esra..." data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+          <textarea name="message" placeholder="Hei Esra..." data-i18n-placeholder="contact.form.messagePlaceholder" required></textarea>
         </div>
 
         <button type="submit" class="btn-primary" style="width:100%" data-i18n="contact.form.submit">Laheta -></button>
       </form>
-      </div>
+      
+    </div>
   </div>
 </section>
 
