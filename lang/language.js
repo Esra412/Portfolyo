@@ -20,7 +20,7 @@
     "about.info.fieldLabel": "Ala",
     "about.info.fieldValue": "Ohjelmistokehitys",
     "about.info.locationLabel": "Sijainti",
-    "about.info.locationValue": "Helsinki, FI",
+    "about.info.locationValue": "Kouvola, FI",
     "about.info.languagesLabel": "Kielet",
     "about.info.languagesValue": "FI · TR · EN",
     "about.info.statusLabel": "Tilanne",
@@ -54,7 +54,7 @@
     "contact.lead": "Harjoittelupaikat, projektit tai vain hei - kirjoita minulle!",
     "contact.emailLabel": "Sahkoposti",
     "contact.locationLabel": "Sijainti",
-    "contact.locationValue": "Helsinki, Suomi",
+    "contact.locationValue": "Kouvola, Suomi",
     "contact.form.nameLabel": "Nimesi",
     "contact.form.namePlaceholder": "Ada Lovelace",
     "contact.form.emailLabel": "Sahkoposti",
@@ -63,7 +63,7 @@
     "contact.form.messagePlaceholder": "Hei Esra...",
     "contact.form.submit": "Laheta ->",
     "footer.copy": "© 2024 Esra Bagdat",
-    "footer.meta": "Helsinki · Ohjelmistokehittaja"
+    "footer.meta": "Kouvola · Ohjelmistokehittaja"
   },
   en: {
     "nav.about": "About",
@@ -86,7 +86,7 @@
     "about.info.fieldLabel": "Field",
     "about.info.fieldValue": "Software Development",
     "about.info.locationLabel": "Location",
-    "about.info.locationValue": "Helsinki, FI",
+    "about.info.locationValue": "Kouvola, FI",
     "about.info.languagesLabel": "Languages",
     "about.info.languagesValue": "FI · TR · EN",
     "about.info.statusLabel": "Status",
@@ -120,7 +120,7 @@
     "contact.lead": "Internships, projects, or just a quick hello - send me a message!",
     "contact.emailLabel": "Email",
     "contact.locationLabel": "Location",
-    "contact.locationValue": "Helsinki, Finland",
+    "contact.locationValue": "Kouvola, Finland",
     "contact.form.nameLabel": "Your name",
     "contact.form.namePlaceholder": "Ada Lovelace",
     "contact.form.emailLabel": "Email",
@@ -129,7 +129,7 @@
     "contact.form.messagePlaceholder": "Hi Esra...",
     "contact.form.submit": "Send ->",
     "footer.copy": "© 2024 Esra Bagdat",
-    "footer.meta": "Helsinki · Software Developer"
+    "footer.meta": "Kouvola · Software Developer"
   },
   tr: {
     "nav.about": "Hakkimda",
@@ -152,7 +152,7 @@
     "about.info.fieldLabel": "Alan",
     "about.info.fieldValue": "Yazilim Gelistirme",
     "about.info.locationLabel": "Konum",
-    "about.info.locationValue": "Helsinki, FI",
+    "about.info.locationValue": "Kouvola, FI",
     "about.info.languagesLabel": "Diller",
     "about.info.languagesValue": "FI · TR · EN",
     "about.info.statusLabel": "Durum",
@@ -186,7 +186,7 @@
     "contact.lead": "Staj, projeler ya da sadece merhaba demek icin bana yaz!",
     "contact.emailLabel": "E-posta",
     "contact.locationLabel": "Konum",
-    "contact.locationValue": "Helsinki, Finlandiya",
+    "contact.locationValue": "Kouvola, Finlandiya",
     "contact.form.nameLabel": "Adin",
     "contact.form.namePlaceholder": "Ada Lovelace",
     "contact.form.emailLabel": "E-posta",
@@ -195,7 +195,7 @@
     "contact.form.messagePlaceholder": "Merhaba Esra...",
     "contact.form.submit": "Gonder ->",
     "footer.copy": "© 2024 Esra Bagdat",
-    "footer.meta": "Helsinki · Yazilim Gelistirici"
+    "footer.meta": "Kouvola · Yazilim Gelistirici"
   }
 };
 
