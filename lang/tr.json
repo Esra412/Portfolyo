@@ -19,7 +19,7 @@
   "about.info.fieldLabel": "Alan",
   "about.info.fieldValue": "Yazilim Gelistirme",
   "about.info.locationLabel": "Konum",
-  "about.info.locationValue": "Helsinki, FI",
+  "about.info.locationValue": "Kouvola, FI",
   "about.info.languagesLabel": "Diller",
   "about.info.languagesValue": "FI · TR · EN",
   "about.info.statusLabel": "Durum",
@@ -53,7 +53,7 @@
   "contact.lead": "Staj, projeler ya da sadece merhaba demek icin bana yaz!",
   "contact.emailLabel": "E-posta",
   "contact.locationLabel": "Konum",
-  "contact.locationValue": "Helsinki, Finlandiya",
+  "contact.locationValue": "Kouvola, Finlandiya",
   "contact.form.nameLabel": "Adin",
   "contact.form.namePlaceholder": "Ada Lovelace",
   "contact.form.emailLabel": "E-posta",
@@ -62,5 +62,5 @@
   "contact.form.messagePlaceholder": "Merhaba Esra...",
   "contact.form.submit": "Gonder ->",
   "footer.copy": "© 2024 Esra Bagdat",
-  "footer.meta": "Helsinki · Yazilim Gelistirici"
+  "footer.meta": "Kouvola · Yazilim Gelistirici"
 }

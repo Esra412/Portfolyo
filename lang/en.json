@@ -19,7 +19,7 @@
   "about.info.fieldLabel": "Field",
   "about.info.fieldValue": "Software Development",
   "about.info.locationLabel": "Location",
-  "about.info.locationValue": "Helsinki, FI",
+  "about.info.locationValue": "Kouvola, FI",
   "about.info.languagesLabel": "Languages",
   "about.info.languagesValue": "FI · TR · EN",
   "about.info.statusLabel": "Status",
@@ -53,7 +53,7 @@
   "contact.lead": "Internships, projects, or just a quick hello - send me a message!",
   "contact.emailLabel": "Email",
   "contact.locationLabel": "Location",
-  "contact.locationValue": "Helsinki, Finland",
+  "contact.locationValue": "Kouvola, Finland",
   "contact.form.nameLabel": "Your name",
   "contact.form.namePlaceholder": "Ada Lovelace",
   "contact.form.emailLabel": "Email",
@@ -62,5 +62,5 @@
   "contact.form.messagePlaceholder": "Hi Esra...",
   "contact.form.submit": "Send ->",
   "footer.copy": "© 2024 Esra Bagdat",
-  "footer.meta": "Helsinki · Software Developer"
+  "footer.meta": "Kouvola · Software Developer"
 }

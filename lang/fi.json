@@ -19,7 +19,7 @@
   "about.info.fieldLabel": "Ala",
   "about.info.fieldValue": "Ohjelmistokehitys",
   "about.info.locationLabel": "Sijainti",
-  "about.info.locationValue": "Helsinki, FI",
+  "about.info.locationValue": "Kouvola, FI",
   "about.info.languagesLabel": "Kielet",
   "about.info.languagesValue": "FI · TR · EN",
   "about.info.statusLabel": "Tilanne",
@@ -53,7 +53,7 @@
   "contact.lead": "Harjoittelupaikat, projektit tai vain hei - kirjoita minulle!",
   "contact.emailLabel": "Sahkoposti",
   "contact.locationLabel": "Sijainti",
-  "contact.locationValue": "Helsinki, Suomi",
+  "contact.locationValue": "Kouvola, Suomi",
   "contact.form.nameLabel": "Nimesi",
   "contact.form.namePlaceholder": "Ada Lovelace",
   "contact.form.emailLabel": "Sahkoposti",
@@ -62,5 +62,5 @@
   "contact.form.messagePlaceholder": "Hei Esra...",
   "contact.form.submit": "Laheta ->",
   "footer.copy": "© 2024 Esra Bagdat",
-  "footer.meta": "Helsinki · Ohjelmistokehittaja"
+  "footer.meta": "Kouvola · Ohjelmistokehittaja"
 }
