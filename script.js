@@ -1,12 +1,12 @@
 ﻿const skills = [
   { name: 'HTML / CSS', pct: 85 },
   { name: 'JavaScript', pct: 75 },
-  { name: 'React', pct: 60 },
-  { name: 'Python', pct: 65 },
-  { name: 'Git / GitHub', pct: 70 },
+  { name: 'PHP', pct: 65 },
+  { name: 'C#', pct: 77 },
+  { name: 'Node.js', pct: 33 },
   { name: 'SQL', pct: 55 },
-  { name: 'Figma', pct: 50 },
-  { name: 'Node.js', pct: 45 },
+  { name: 'Figma', pct: 40 },
+  { name: 'Krita', pct: 70 },
 ];
 
 const projects = [
@@ -84,12 +84,6 @@ function renderProjects() {
   `).join('');
 }
 
-const cvData = {
-  fi: { title: 'Suomenkielinen CV', sub: 'Lataa PDF-muodossa', btn: 'Lataa', hint: 'Voit ladata oman CV-tiedostosi tahan' },
-  en: { title: 'English CV', sub: 'Download as PDF', btn: 'Download', hint: 'You can upload your own CV file here' },
-  tr: { title: 'Turkce Ozgecmis', sub: 'PDF olarak indir', btn: 'Indir', hint: 'Kendi CV dosyanizi buraya yukleyebilirsiniz' },
-};
-
 function updateCvLanguage(lang) {
   const data = cvData[lang] || cvData.fi;
   document.getElementById('cv-title').textContent = data.title;
@@ -105,6 +99,14 @@ function updateCvLanguage(lang) {
 document.querySelectorAll('.cv-btn').forEach((button) => {
   button.addEventListener('click', () => {
     updateCvLanguage(button.dataset.lang);
+  });
+});
+
+document.querySelectorAll('.lang-btn').forEach((button) => {
+  button.addEventListener('click', () => {
+    applyLanguage(button.dataset.lang);
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
   });
 });
 

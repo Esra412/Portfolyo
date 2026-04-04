@@ -11,9 +11,11 @@
     "hero.ctaContact": "Ota yhteytta",
     "about.label": "01 - Tietoa minusta",
     "about.title": "Hei, olen Esra",
-    "about.p1": "Olen ohjelmistokehittajan ammattikoulun toisen vuoden opiskelija. Innostuin koodaamisesta heti ensimmaisella kurssilla ja olen siita lahtien rakentanut omia projekteja vapaa-ajalla.",
-    "about.p2": "Erityisesti frontend-kehitys kiinnostaa minua - haluan luoda kayttajaystavallisia ja selkeita kayttoliittymia. Opin jatkuvasti uutta ja haen aktiivisesti harjoittelupaikkaa.",
-    "about.p3": "Vapaa-ajallani kokeilen uusia teknologioita, pelaan videopeleja ja juon liikaa kahvia.",
+    "about.p1": "Olen ohjelmistokehitystä opiskeleva tekijä, joka nauttii käytännönläheisestä tekemisestä ja ongelmien ratkaisemisesta. Minua kiinnostaa erityisesti sovelluskehitys, käyttöliittymien suunnittelu sekä pelinkehitys Unityn avulla.",
+
+"about.p2": "Olen toteuttanut useita projekteja eri teknologioilla, kuten C#:llä, HTML/CSS/JavaScriptilla sekä Unity-pelimoottorilla. Projekteissani olen keskittynyt erityisesti toiminnallisuuteen, selkeään rakenteeseen ja käyttäjäystävällisyyteen.",
+
+"about.p3": "Työskentelytavassani korostuvat oma-aloitteisuus ja halu oppia jatkuvasti uutta. Pidän siitä, että voin kehittää itseäni ja syventää osaamistani käytännön projektien kautta.",
     "about.quote": "\"Jokainen bugi on mahdollisuus oppia jotain uutta.\"",
     "about.info.educationLabel": "Koulutus",
     "about.info.educationValue": "Ammattikoulu, 2. vsk",
@@ -51,7 +53,7 @@
     "cv.langTr": "Turkce",
     "contact.label": "05 - Yhteystiedot",
     "contact.title": "Ota yhteytta",
-    "contact.lead": "Harjoittelupaikat, projektit tai vain hei - kirjoita minulle!",
+    "contact.lead": "Harjoittelupaikat, projektit tai jotain muuta - kirjoita heti!",
     "contact.emailLabel": "Sahkoposti",
     "contact.locationLabel": "Sijainti",
     "contact.locationValue": "Kouvola, Suomi",
