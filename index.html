@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,55 +12,55 @@
 <nav>
   <div class="nav-brand">Esra Bagdat</div>
   <ul class="nav-links">
-    <li><a href="#about" data-i18n="nav.about">Tietoa minusta</a></li>
-    <li><a href="#skills" data-i18n="nav.skills">Taidot</a></li>
-    <li><a href="#projects" data-i18n="nav.projects">Projektit</a></li>
-    <li><a href="#cv">CV</a></li>
-    <li><a href="#contact" data-i18n="nav.contact">Yhteystiedot</a></li>
+    <li><a href="#about" data-i18n="nav.about">About</a></li>
+    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+    <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
   </ul>
   <div class="lang-selector">
-    <button class="lang-btn active" data-lang="fi">FI</button>
-    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="fi">FI</button>
+    <button class="lang-btn active" data-lang="en">EN</button>
     <button class="lang-btn" data-lang="tr">TR</button>
   </div>
 </nav>
 
 <div class="hero">
   <div>
-    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Ohjelmistokehittaja - Portfolio</p>
+    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Software Developer Portfolio</p>
     <h1 class="hero-name">Esra<br>Bagdat</h1>
-    <p class="hero-role" data-i18n="hero.role">Frontend-kehittaja · Opiskelija</p>
+    <p class="hero-role" data-i18n="hero.role">Software Development · Year 2</p>
     <div class="hero-status">
       <span class="status-dot"></span>
-      <span data-i18n="hero.status">Ammattikoulun 2. vuosi · Avoinna harjoittelupaikoille</span>
+      <span data-i18n="hero.status">Second-year software development student · Open to internships</span>
     </div>
   </div>
   <div class="hero-avatar">EB</div>
 </div>
 
 <div class="hero-buttons">
-  <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" data-i18n="hero.ctaProjects">Katso projektit</button>
-  <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="hero.ctaContact">Ota yhteytta</button>
+  <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" data-i18n="hero.ctaProjects">View projects</button>
+  <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="hero.ctaContact">Contact me</button>
 </div>
 
 <section id="about">
   <div class="sec-wrap">
-    <p class="sec-label" data-i18n="about.label">01 - Tietoa minusta</p>
-    <h2 class="sec-title" data-i18n="about.title">Hei, olen Esra</h2>
+    <p class="sec-label" data-i18n="about.label">01 - About Me</p>
+    <h2 class="sec-title" data-i18n="about.title">Hi, I'm Esra</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p data-i18n="about.p1">Olen ohjelmistokehitystä opiskeleva tekijä, joka nauttii käytännönläheisestä tekemisestä ja ongelmien ratkaisemisesta. Minua kiinnostaa erityisesti sovelluskehitys, käyttöliittymien suunnittelu sekä pelinkehitys Unityn avulla.</p>
-        <p data-i18n="about.p2">Olen toteuttanut useita projekteja eri teknologioilla, kuten C#:llä, HTML/CSS/JavaScriptilla sekä Unity-pelimoottorilla. Projekteissani olen keskittynyt erityisesti toiminnallisuuteen, selkeään rakenteeseen ja käyttäjäystävällisyyteen.</p>
-        <p data-i18n="about.p3">Työskentelytavassani korostuvat oma-aloitteisuus ja halu oppia jatkuvasti uutta. Pidän siitä, että voin kehittää itseäni ja syventää osaamistani käytännön projektien kautta.</p>
-        <p class="about-quote" data-i18n="about.quote">"Jokainen bugi on mahdollisuus oppia jotain uutta."</p>
+        <p data-i18n="about.p1">I am a second-year software development student who enjoys practical work and solving problems. I am especially interested in application development, UI design, and game development with Unity.</p>
+        <p data-i18n="about.p2">I have built several projects with technologies such as C#, HTML, CSS, JavaScript, and the Unity game engine. In my work I focus on functionality, clear structure, and user-friendly experiences.</p>
+        <p data-i18n="about.p3">My way of working is defined by initiative and a strong desire to keep learning. I enjoy improving my skills and deepening my knowledge through real projects.</p>
+        <p class="about-quote" data-i18n="about.quote">"Every bug is a chance to learn something new."</p>
       </div>
       <div class="info-card">
-        <div class="info-row"><span data-i18n="about.info.educationLabel">Koulutus</span><span data-i18n="about.info.educationValue">Ammattikoulu, 2. vsk</span></div>
-        <div class="info-row"><span data-i18n="about.info.fieldLabel">Ala</span><span data-i18n="about.info.fieldValue">Ohjelmistokehitys</span></div>
-        <div class="info-row"><span data-i18n="about.info.locationLabel">Sijainti</span><span data-i18n="about.info.locationValue">Kouvola, FI</span></div>
-        <div class="info-row"><span data-i18n="about.info.languagesLabel">Kielet</span><span data-i18n="about.info.languagesValue">FI · TR · EN</span></div>
-        <div class="info-row"><span data-i18n="about.info.statusLabel">Tilanne</span><span data-i18n="about.info.statusValue">Hakee harjoittelua</span></div>
-        <div class="info-row"><span data-i18n="about.info.emailLabel">Sahkoposti</span><span>esra07bagdat@gmail.com</span></div>
+        <div class="info-row"><span data-i18n="about.info.educationLabel">Education</span><span data-i18n="about.info.educationValue">Software Development, year 2</span></div>
+        <div class="info-row"><span data-i18n="about.info.fieldLabel">Field</span><span data-i18n="about.info.fieldValue">Software Development</span></div>
+        <div class="info-row"><span data-i18n="about.info.locationLabel">Location</span><span data-i18n="about.info.locationValue">Kouvola, FI</span></div>
+        <div class="info-row"><span data-i18n="about.info.languagesLabel">Languages</span><span data-i18n="about.info.languagesValue">FI · TR · EN</span></div>
+        <div class="info-row"><span data-i18n="about.info.statusLabel">Status</span><span data-i18n="about.info.statusValue">Looking for internship</span></div>
+        <div class="info-row"><span data-i18n="about.info.emailLabel">Email</span><span>esra07bagdat@gmail.com</span></div>
       </div>
     </div>
   </div>
@@ -68,16 +68,16 @@
 
 <section id="skills">
   <div class="sec-wrap">
-    <p class="sec-label" data-i18n="skills.label">02 - Taidot</p>
-    <h2 class="sec-title" data-i18n="skills.title">Teknologiat</h2>
+    <p class="sec-label" data-i18n="skills.label">02 - Skills</p>
+    <h2 class="sec-title" data-i18n="skills.title">Technologies</h2>
     <div class="skills-grid" id="skills-grid"></div>
   </div>
 </section>
 
 <section id="projects">
   <div class="sec-wrap">
-    <p class="sec-label" data-i18n="projects.label">03 - Projektit</p>
-    <h2 class="sec-title" data-i18n="projects.title">Omat tyot</h2>
+    <p class="sec-label" data-i18n="projects.label">03 - Projects</p>
+    <h2 class="sec-title" data-i18n="projects.title">My Work</h2>
     <div class="projects-grid" id="projects-grid"></div>
   </div>
 </section>
@@ -85,51 +85,51 @@
 <section id="cv">
   <div class="cv-wrap">
     <p class="sec-label" data-i18n="cv.label">04 - Curriculum Vitae</p>
-    <h2 class="sec-title" data-i18n="cv.heading">Lataa CV</h2>
+    <h2 class="sec-title" data-i18n="cv.heading">Download CV</h2>
     <div class="cv-lang-row">
-      <button class="cv-btn active" data-lang="fi" data-i18n="cv.langFi">Suomi</button>
-      <button class="cv-btn" data-lang="en" data-i18n="cv.langEn">English</button>
-      <button class="cv-btn" data-lang="tr" data-i18n="cv.langTr">Turkce</button>
+      <button class="cv-btn" data-lang="fi" data-i18n="cv.langFi">Finnish</button>
+      <button class="cv-btn active" data-lang="en" data-i18n="cv.langEn">English</button>
+      <button class="cv-btn" data-lang="tr" data-i18n="cv.langTr">Turkish</button>
     </div>
     <div class="cv-box">
       <div class="cv-icon-circle">CV</div>
-      <p class="cv-box-title" id="cv-title">Suomenkielinen CV</p>
-      <p class="cv-box-sub" id="cv-sub">Lataa PDF-muodossa</p>
-      <button class="btn-primary" id="cv-dl-btn">Lataa</button>
+      <p class="cv-box-title" id="cv-title">English CV</p>
+      <p class="cv-box-sub" id="cv-sub">Download as PDF</p>
+      <button class="btn-primary" id="cv-dl-btn">Download</button>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="sec-wrap">
-    <p class="sec-label" data-i18n="contact.label">05 - Yhteystiedot</p>
-    <h2 class="sec-title" data-i18n="contact.title">Ota yhteytta</h2>
+    <p class="sec-label" data-i18n="contact.label">05 - Contact</p>
+    <h2 class="sec-title" data-i18n="contact.title">Get in touch</h2>
     <div class="contact-grid">
       <div>
-        <p style="color:var(--brown);font-size:13px;font-weight:300;margin-bottom:20px;" data-i18n="contact.lead">Harjoittelupaikat, projektit tai jotain muuta - kirjoita heti!</p>
-        <div class="ci-row"><span class="ci-label" data-i18n="contact.emailLabel">Sahkoposti</span><span class="ci-val">esra07bagdat@gmail.com</span></div>
+        <p style="color:var(--brown);font-size:13px;font-weight:300;margin-bottom:20px;" data-i18n="contact.lead">Internships, projects, or just a quick hello - send me a message!</p>
+        <div class="ci-row"><span class="ci-label" data-i18n="contact.emailLabel">Email</span><span class="ci-val">esra07bagdat@gmail.com</span></div>
         <div class="ci-row"><span class="ci-label">GitHub</span><span class="ci-val">github.com/Esra412</span></div>
         <div class="ci-row"><span class="ci-label">LinkedIn</span><span class="ci-val">linkedin.com/in/esrabagdat</span></div>
-        <div class="ci-row"><span class="ci-label" data-i18n="contact.locationLabel">Sijainti</span><span class="ci-val" data-i18n="contact.locationValue">Kouvola, Suomi</span></div>
+        <div class="ci-row"><span class="ci-label" data-i18n="contact.locationLabel">Location</span><span class="ci-val" data-i18n="contact.locationValue">Kouvola, Finland</span></div>
       </div>
 
       <form action="https://formspree.io/f/mzdkjjjk" method="POST">
         <div class="form-group">
-          <label data-i18n="contact.form.nameLabel">Nimesi</label>
+          <label data-i18n="contact.form.nameLabel">Your name</label>
           <input type="text" name="name" placeholder="Ada Lovelace" data-i18n-placeholder="contact.form.namePlaceholder" required>
         </div>
         
         <div class="form-group">
-          <label data-i18n="contact.form.emailLabel">Sahkoposti</label>
+          <label data-i18n="contact.form.emailLabel">Email</label>
           <input type="email" name="email" placeholder="ada@example.com" data-i18n-placeholder="contact.form.emailPlaceholder" required>
         </div>
 
         <div class="form-group">
-          <label data-i18n="contact.form.messageLabel">Viesti</label>
-          <textarea name="message" placeholder="Hei Esra..." data-i18n-placeholder="contact.form.messagePlaceholder" required></textarea>
+          <label data-i18n="contact.form.messageLabel">Message</label>
+          <textarea name="message" placeholder="Hi Esra..." data-i18n-placeholder="contact.form.messagePlaceholder" required></textarea>
         </div>
 
-        <button type="submit" class="btn-primary" style="width:100%" data-i18n="contact.form.submit">Laheta -></button>
+        <button type="submit" class="btn-primary" style="width:100%" data-i18n="contact.form.submit">Send -></button>
       </form>
       
     </div>
@@ -138,7 +138,7 @@
 
 <footer>
   <span data-i18n="footer.copy">© 2024 Esra Bagdat</span>
-  <span data-i18n="footer.meta">Kouvola · Ohjelmistokehittaja</span>
+  <span data-i18n="footer.meta">Kouvola · Software Developer</span>
 </footer>
 
 <script src="lang/language.js"></script>
