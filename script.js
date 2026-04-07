@@ -19,24 +19,24 @@ const projects = [
   },
   {
     idx: '02',
-    tagKey: 'projects.items.todo.tag',
-    titleKey: 'projects.items.todo.title',
-    descKey: 'projects.items.todo.desc',
-    tech: ['React', 'CSS', 'localStorage'],
+    tagKey: 'projects.items.educommerce.tag',
+    titleKey: 'projects.items.educommerce.title',
+    descKey: 'projects.items.educommerce.desc',
+    tech: ['Node.js', 'JSON', 'HTML', 'CSS', 'JavaScript', 'Proxy'],
   },
   {
     idx: '03',
-    tagKey: 'projects.items.quiz.tag',
-    titleKey: 'projects.items.quiz.title',
-    descKey: 'projects.items.quiz.desc',
-    tech: ['Python', 'JSON'],
+    tagKey: 'projects.items.edudev.tag',
+    titleKey: 'projects.items.edudev.title',
+    descKey: 'projects.items.edudev.desc',
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     idx: '04',
-    tagKey: 'projects.items.portfolio.tag',
-    titleKey: 'projects.items.portfolio.title',
-    descKey: 'projects.items.portfolio.desc',
-    tech: ['HTML', 'CSS'],
+    tagKey: 'projects.items.unity.tag',
+    titleKey: 'projects.items.unity.title',
+    descKey: 'projects.items.unity.desc',
+    tech: ['C#', 'Unity', 'Krita'],
   },
 ];
 
@@ -56,7 +56,7 @@ function renderSkills() {
     <div class="skill-card">
       <div class="skill-pct">${skill.pct}%</div>
       <div class="skill-name">${skill.name}</div>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="${skill.pct}"></div></div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="${skill.pct}" style="--skill-width: ${skill.pct}%"></div></div>
     </div>
   `).join('');
 }
@@ -85,15 +85,40 @@ function renderProjects() {
 }
 
 function updateCvLanguage(lang) {
-  const data = cvData[lang] || cvData.fi;
-  document.getElementById('cv-title').textContent = data.title;
-  document.getElementById('cv-sub').textContent = data.sub;
-  document.getElementById('cv-dl-btn').textContent = data.btn;
-  document.getElementById('cv-hint').textContent = data.hint;
+  const cvTitle = document.getElementById('cv-title');
+  const cvSub = document.getElementById('cv-sub');
+  const cvButton = document.getElementById('cv-dl-btn');
+
+  if (cvTitle) cvTitle.textContent = tr('cv.box.title', 'CV');
+  if (cvSub) cvSub.textContent = tr('cv.box.sub', '');
+  if (cvButton) cvButton.textContent = tr('cv.box.button', 'Download');
 
   document.querySelectorAll('.cv-btn').forEach((button) => {
     button.classList.toggle('active', button.dataset.lang === lang);
   });
+}
+
+function setupSkillsAnimation() {
+  const skillsSection = document.getElementById('skills');
+  if (!skillsSection) return;
+
+  const animateBars = () => {
+    skillsSection.querySelectorAll('.skill-bar-fill').forEach((bar) => {
+      bar.style.setProperty('--skill-width', `${bar.dataset.w}%`);
+      bar.classList.add('animate');
+    });
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateBars();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(skillsSection);
 }
 
 document.querySelectorAll('.cv-btn').forEach((button) => {
@@ -102,32 +127,10 @@ document.querySelectorAll('.cv-btn').forEach((button) => {
   });
 });
 
-document.querySelectorAll('.lang-btn').forEach((button) => {
-  button.addEventListener('click', () => {
-    applyLanguage(button.dataset.lang);
-    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-  });
-});
-
 renderSkills();
 renderProjects();
-updateCvLanguage('fi');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.querySelectorAll('.skill-bar-fill').forEach((bar) => {
-        bar.style.width = `${bar.dataset.w}%`;
-      });
-    }
-  });
-}, { threshold: 0.2 });
-
-const skillsSection = document.getElementById('skills');
-if (skillsSection) {
-  observer.observe(skillsSection);
-}
+updateCvLanguage(localStorage.getItem('language') || 'fi');
+setupSkillsAnimation();
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', (event) => {
