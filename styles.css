@@ -298,7 +298,20 @@ section {
   background: var(--accent);
   border-radius: 2px;
   width: 0%;
-  transition: width 1s ease;
+  will-change: width;
+}
+
+.skill-bar-fill.animate {
+  animation: fillBar 1.2s ease-out forwards;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--skill-width, 85%);
+  }
 }
 
 .projects-grid {
@@ -540,33 +553,86 @@ footer {
 
 @media (max-width: 700px) {
   nav {
-    padding: 0 20px;
+    padding: 14px 20px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nav-brand {
+    width: 100%;
+    text-align: center;
   }
   .nav-links {
     display: none;
   }
   .lang-selector {
-    display: none;
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .lang-btn {
+    min-width: 58px;
+    padding: 8px 12px;
   }
   .hero {
     grid-template-columns: 1fr;
     padding: 36px 20px;
+    gap: 24px;
   }
   .hero-avatar {
     display: none;
+  }
+  .hero-status {
+    line-height: 1.5;
+    flex-wrap: wrap;
   }
   .hero-buttons {
     padding: 16px 20px;
     flex-direction: column;
     align-items: center;
   }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-ghost {
+    width: 100%;
+    max-width: 320px;
+  }
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info-row span:last-child {
+    text-align: left;
+  }
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .cv-lang-row {
+    flex-wrap: wrap;
+  }
+  .cv-btn {
+    flex: 1 1 120px;
+    text-align: center;
+  }
+  .cv-box {
+    padding: 28px 20px;
+  }
   .sec-wrap,
   .cv-wrap {
     padding: 32px 20px;
+  }
+  .ci-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .ci-label {
+    width: auto;
   }
   footer {
     padding: 14px 20px;
