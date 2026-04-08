@@ -438,6 +438,10 @@ section {
   color: var(--white);
   border-color: var(--dark);
 }
+.cv-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
 .cv-box {
   background: var(--cream);
   border: 1px solid var(--bej);
@@ -472,6 +476,11 @@ section {
   font-size: 12px;
   margin-bottom: 20px;
   font-weight: 300;
+}
+.btn-primary:disabled {
+  background: var(--bej2);
+  color: var(--white);
+  cursor: not-allowed;
 }
 .cv-hint {
   font-size: 10px;
